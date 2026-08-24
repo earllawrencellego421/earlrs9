@@ -1,64 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RS8 Racing | Taiwan Speed Factory</title>
-    <meta name="description" content="RS8 Racing — Taiwan-engineered CVT and drivetrain performance parts, dyno-tested for Philippine riders.">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* Small addition for the background video */
-        .hero-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 0;
-            opacity: 0.35; /* Dims the video so the text pops */
-        }
-        .hero-inner {
-            z-index: 1; /* Keeps text above the video */
-        }
-    </style>
-</head>
-<body>
+<?php
+$pageTitle  = 'Home';
+$activePage = 'home';
+include __DIR__ . '/includes/header.php';
+?>
 
-<header class="site-header">
-    <a href="index.html" class="logo"><img src="images/rs8logo.webp" alt="RS8 Racing Logo"></a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-    </button>
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">HOME</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
-</header>
-
-<div class="hazard-rule"></div>
-
-<main>
-
-    <!-- HERO SECTION WITH VIDEO -->
-    <section class="hero">
-        <video autoplay muted loop playsinline class="hero-video">
-            <source src="images/rs8-hero.mp4" type="video/mp4">
+    <section class="hero hero-video">
+        <video class="hero-video-bg" autoplay muted loop playsinline poster="images/hero-poster.jpg">
+            <source src="https://rs8.com.ph/wp-content/uploads/2023/06/RS8-Taiwan-Speed-Factory-Redspeed-Motoworkz-Channel-Trailer.mp4" type="video/mp4">
         </video>
+        <div class="hero-overlay"></div>
         <div class="hero-inner">
-            <span class="eyebrow">Taiwan Speed Factory</span>
-            <h1>SPEED, QUALITY, AND <em>CHAMPIONS!</em></h1>
-            <p>RS8 TAIWAN SPEED FACTORY EXCITE YOUR LIFE.</p>
+            <h1><span class="highlight">Speed</span>, Quality, and Champions!</h1>
+            <p class="hero-sub">RS8 Taiwan Speed Factory<br>Excite your life.</p>
             <div class="hero-ctas">
-                <a href="#featured" class="btn">CHECK OUR PRODUCTS</a>
+                <a href="#featured" class="btn btn-arrow">Check Our Products</a>
             </div>
         </div>
     </section>
 
-    <!-- PRODUCT GRID -->
     <section id="featured">
         <div class="container">
             <div class="section-title">
@@ -69,62 +28,70 @@
 
             <div class="product-grid">
 
+                <!-- Product 1 -->
                 <div class="product-card">
                     <div class="img-wrap"><img src="images/rs8oil.webp" alt="RS8 Racing Line 10W-50"></div>
                     <h3>RS8 Racing Line 10W-50</h3>
                     <div class="product-price">₱350.00</div>
                     <p class="product-desc">100% Synthetic PAO Formulated Racing Oil</p>
-                    
+
                     <div class="details-content">
                         <ul class="product-features">
                             <li>100% Synthetic</li>
                             <li>10W-50 API SN</li>
-                            <li>4T Racing / JASO MA</li>
+                            <li>4T Racing</li>
+                            <li>JASO MA</li>
+                            <li>Racing Line</li>
                             <li>PAO Formulated</li>
                         </ul>
                     </div>
                     <button class="details-btn">View Details</button>
                 </div>
 
+                <!-- Product 2 -->
                 <div class="product-card">
                     <div class="img-wrap"><img src="images/torquedrive.webp" alt="RS8 Torque Drive"></div>
-                    <h3>RS8 Torque Drive</h3>
+                    <h3>RS8 Torque Drive Half Sheeve</h3>
                     <div class="product-price">₱1,680.00</div>
-                    <p class="product-desc">Race On! Highspeed Steel Torque Drive Half Sheeve</p>
-                    
+                    <p class="product-desc">Race On! Highspeed Steel Torque Drive for Mio Soul GT 125</p>
+
                     <div class="details-content">
                         <ul class="product-features">
                             <li>Touring and Race Proven</li>
                             <li>Performance Guaranteed</li>
                             <li>High Speed Profile Design</li>
                             <li>Precision Machining</li>
+                            <li>Easy Tuning and Installation</li>
                         </ul>
                     </div>
                     <button class="details-btn">View Details</button>
                 </div>
 
+                <!-- Product 3 -->
                 <div class="product-card">
                     <div class="img-wrap"><img src="images/rs8bell.webp" alt="RS8 Performance Clutch Bell"></div>
                     <h3>RS8 Performance Clutch Bell</h3>
                     <div class="product-price">₱1,380.00</div>
                     <p class="product-desc">Engineered for PCX, ADV, and Click</p>
-                    
+
                     <div class="details-content">
                         <ul class="product-features">
                             <li>Anti Dragging Formula</li>
                             <li>Dynamically Balanced</li>
                             <li>Touring and Race Proven</li>
+                            <li>Performance Guaranteed</li>
                         </ul>
                     </div>
                     <button class="details-btn">View Details</button>
                 </div>
 
+                <!-- Product 4 -->
                 <div class="product-card">
                     <div class="img-wrap"><img src="images/rs8clutchassy.webp" alt="RS8 Lightweight Clutch Master"></div>
                     <h3>RS8 Clutch Master</h3>
                     <div class="product-price">₱1,680.00</div>
                     <p class="product-desc">Super Lightweight Clutch Master Assembly</p>
-                    
+
                     <div class="details-content">
                         <ul class="product-features">
                             <li>Anti Dragging Formula</li>
@@ -135,34 +102,36 @@
                     <button class="details-btn">View Details</button>
                 </div>
 
+                <!-- Product 5 -->
                 <div class="product-card">
                     <div class="img-wrap"><img src="images/rs8degreaser.webp" alt="RS8 Magic Degreaser"></div>
                     <h3>RS8 Magic Degreaser</h3>
                     <div class="product-price">₱150.00</div>
-                    <p class="product-desc">Shine, Protect, Clean and Degrease. All In One.</p>
-                    
+                    <p class="product-desc">Shine, Protect, Clean and Degrease. Powerful Formula Cleans Quickly and Easily.</p>
+
                     <div class="details-content">
                         <ul class="product-features">
-                            <li>Powerful Fast-Acting Formula</li>
-                            <li>Safe for Engine & Plastic Parts</li>
-                            <li>Excellent Chain Cleaner</li>
+                            <li>Magic Formulation for Engine, Plastic Parts, Chain</li>
                         </ul>
                     </div>
                     <button class="details-btn">View Details</button>
                 </div>
 
+                <!-- Product 6 -->
                 <div class="product-card">
                     <div class="img-wrap"><img src="images/rs8cap.jpg" alt="RS8 Snapback Mesh Cap"></div>
                     <h3>RS8 Snapback Mesh Cap</h3>
                     <div class="product-price">₱680.00</div>
                     <p class="product-desc">V1 Gray-White (Limited Edition) Team Apparel</p>
-                    
+
                     <div class="details-content">
                         <ul class="product-features">
-                            <li>Premium Flat Brim Snapback</li>
-                            <li>High Quality 3D Embroidery</li>
-                            <li>Cotton/Acrylic Blend</li>
-                            <li>Comes with Free String Bag</li>
+                            <li>Snapback</li>
+                            <li>Flat Brim</li>
+                            <li>Embroidery</li>
+                            <li>High Quality</li>
+                            <li>Cotton/Acrylic</li>
+                            <li>Comes with String Bag</li>
                         </ul>
                     </div>
                     <button class="details-btn">View Details</button>
@@ -172,34 +141,38 @@
         </div>
     </section>
 
-</main>
-
-<footer>
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-col footer-brand">
-                <a href="index.html" class="logo"><img src="images/rs8logo.webp" alt="RS8 Racing Logo"></a>
-                <p>Taiwan-engineered CVT and drivetrain parts, built for riders who push past stock.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Navigate</h4>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="footer-col">
-                <h4>Get In Touch</h4>
-                <a href="mailto:earllawrencellego@gmail.com">earllawrencellego@gmail.com</a>
-                <a href="tel:+639913484223">0991 348 4223</a>
+    <section class="feature-strip">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 3.5"/></svg>
+                    </div>
+                    <div>
+                        <h3>Taiwan Precision</h3>
+                        <p>Every part is machined to tight tolerances by manufacturers who supply the Taiwanese racing scene.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+                    </div>
+                    <div>
+                        <h3>Dyno-Tested</h3>
+                        <p>Nothing ships until it's proven power gains and reliability on the bench, not just on paper.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <div>
+                        <h3>Rider-First Support</h3>
+                        <p>Talk to a real person about fitment, tuning, and what setup makes sense for your build.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <span>&copy; 2026 RS8 Racing. All rights reserved.</span>
-            <span>Taiwan Speed Factory</span>
-        </div>
-    </div>
-</footer>
+    </section>
 
-<script src="js/main.js"></script>
-</body>
-</html>
+<?php include __DIR__ . '/includes/footer.php'; ?>

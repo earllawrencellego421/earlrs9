@@ -1,34 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us | RS8 Racing</title>
-<meta name="description" content="RS8 Racing sources and tests Taiwan-made CVT and drivetrain parts for Philippine riders. Learn our story.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<header class="site-header">
-    <a href="index.html" class="logo"><img src="images/rs8logo.webp" alt="RS8 Racing Logo"></a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-    </button>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<div class="hazard-rule"></div>
-
-<main>
+<?php
+$pageTitle  = 'About Us';
+$activePage = 'about';
+include __DIR__ . '/includes/header.php';
+?>
 
     <section class="page-hero">
         <span class="eyebrow">About RS8</span>
@@ -98,34 +72,4 @@
         </div>
     </section>
 
-</main>
-
-<footer>
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-col footer-brand">
-                <a href="index.html" class="logo"><img src="images/rs8logo.webp" alt="RS8 Racing Logo"></a>
-                <p>Taiwan-engineered CVT and drivetrain parts, built for riders who push past stock.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Navigate</h4>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="footer-col">
-                <h4>Get In Touch</h4>
-                <a href="mailto:earllawrencellego@gmail.com">earllawrencellego@gmail.com</a>
-                <a href="tel:+639913484223">0991 348 4223</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <span>&copy; 2026 RS8 Racing. All rights reserved.</span>
-            <span>Taiwan Speed Factory</span>
-        </div>
-    </div>
-</footer>
-
-<script src="js/main.js"></script>
-</body>
-</html>
+<?php include __DIR__ . '/includes/footer.php'; ?>
