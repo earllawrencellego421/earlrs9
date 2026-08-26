@@ -1,6 +1,6 @@
 -- =========================================================
 -- RS8 Racing — Database Schema
--- Import this file in phpMyAdmin (or `mysql -u root -p < schema.sql`)
+-- Import this file in phpMyAdmin (or `mysql -u root -p < rs8.sql`)
 -- =========================================================
 
 CREATE DATABASE IF NOT EXISTS rs8_racing
@@ -32,14 +32,38 @@ CREATE TABLE IF NOT EXISTS contact_messages (
 ) ENGINE=InnoDB;
 
 -- ---------------------------------------------------------
+-- Orders Table (E-commerce)
+-- ---------------------------------------------------------
+CREATE TABLE IF NOT EXISTS orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    total_amount DECIMAL(10,2) NOT NULL,
+    shipping_address TEXT NOT NULL,
+    contact_number VARCHAR(50) NOT NULL,
+    status ENUM('pending', 'completed', 'cancelled') DEFAULT 'pending',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
+-- ---------------------------------------------------------
+-- Order Items Table (E-commerce)
+-- ---------------------------------------------------------
+CREATE TABLE IF NOT EXISTS order_items (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    order_id INT NOT NULL,
+    product_id VARCHAR(50) NOT NULL,
+    product_name VARCHAR(150) NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    quantity INT NOT NULL,
+    FOREIGN KEY (order_id) REFERENCES orders(id) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
+-- ---------------------------------------------------------
 -- Seed the admin account
 -- username: earl
--- password: earl123   (already hashed below with PHP's password_hash / bcrypt —
---                       the real password is never stored in plain text)
--- IMPORTANT: log in once and change this password from the admin dashboard,
--- or update it here before going live.
+-- password: earl123
 -- ---------------------------------------------------------
-INSERT INTO users (username, email, password_hash, role)
+INSERT IGNORE INTO users (username, email, password_hash, role)
 VALUES (
   'earl',
   'earl@rs8racing.local',

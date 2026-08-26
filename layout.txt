@@ -1,21 +1,45 @@
-EARLRS8PH/
+earlrs9/
+│
+├── admin/
+│   └── dashboard.php
+│
+├── config/
+│   └── db.php
 │
 ├── css/
 │   └── style.css
 │
+├── database/
+│   └── rs8.sql
+│
 ├── images/
+│   ├── rs8-hero.mp4
 │   ├── rs8bell.webp
 │   ├── rs8cap.jpg
 │   ├── rs8clutchassy.webp
 │   ├── rs8degreaser.webp
+│   ├── rs8icon.webp
 │   ├── rs8logo.webp
 │   ├── rs8oil.webp
 │   └── torquedrive.webp
 │
+├── includes/
+│   ├── auth.php
+│   ├── footer.php
+│   └── header.php
+│
 ├── js/
 │   └── main.js
 │
-├── about.html
-├── contact.html
-├── index.html
-└── layout.txt
+├── about.php
+├── cart.php          <-- NEW: The Shopee-like cart page where users see added items
+├── cart_action.php   <-- NEW: A background PHP script to handle adding/removing items to the PHP $_SESSION cart
+├── checkout.php      <-- NEW: Where users finalize their order and it saves to the database
+├── contact.php
+├── dashboard.php
+├── index.php
+├── layout.txt
+├── login.php
+├── logout.php
+├── README.md
+└── register.php

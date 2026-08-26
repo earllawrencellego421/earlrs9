@@ -27,24 +27,18 @@ include __DIR__ . '/includes/header.php';
             </div>
 
             <div class="product-grid">
-
                 <!-- Product 1 -->
                 <div class="product-card">
                     <div class="img-wrap"><img src="images/rs8oil.webp" alt="RS8 Racing Line 10W-50"></div>
                     <h3>RS8 Racing Line 10W-50</h3>
                     <div class="product-price">₱350.00</div>
                     <p class="product-desc">100% Synthetic PAO Formulated Racing Oil</p>
-
                     <div class="details-content">
                         <ul class="product-features">
-                            <li>100% Synthetic</li>
-                            <li>10W-50 API SN</li>
-                            <li>4T Racing</li>
-                            <li>JASO MA</li>
-                            <li>Racing Line</li>
-                            <li>PAO Formulated</li>
+                            <li>100% Synthetic</li><li>10W-50 API SN</li><li>4T Racing</li><li>JASO MA</li><li>Racing Line</li><li>PAO Formulated</li>
                         </ul>
                     </div>
+                    <button class="add-to-cart-btn btn" data-id="p1" data-name="RS8 Racing Line 10W-50" data-price="350.00" data-image="images/rs8oil.webp">Add to Cart</button>
                     <button class="details-btn">View Details</button>
                 </div>
 
@@ -54,16 +48,12 @@ include __DIR__ . '/includes/header.php';
                     <h3>RS8 Torque Drive Half Sheeve</h3>
                     <div class="product-price">₱1,680.00</div>
                     <p class="product-desc">Race On! Highspeed Steel Torque Drive for Mio Soul GT 125</p>
-
                     <div class="details-content">
                         <ul class="product-features">
-                            <li>Touring and Race Proven</li>
-                            <li>Performance Guaranteed</li>
-                            <li>High Speed Profile Design</li>
-                            <li>Precision Machining</li>
-                            <li>Easy Tuning and Installation</li>
+                            <li>Touring and Race Proven</li><li>Performance Guaranteed</li><li>High Speed Profile Design</li><li>Precision Machining</li><li>Easy Tuning and Installation</li>
                         </ul>
                     </div>
+                    <button class="add-to-cart-btn btn" data-id="p2" data-name="RS8 Torque Drive Half Sheeve" data-price="1680.00" data-image="images/torquedrive.webp">Add to Cart</button>
                     <button class="details-btn">View Details</button>
                 </div>
 
@@ -73,15 +63,12 @@ include __DIR__ . '/includes/header.php';
                     <h3>RS8 Performance Clutch Bell</h3>
                     <div class="product-price">₱1,380.00</div>
                     <p class="product-desc">Engineered for PCX, ADV, and Click</p>
-
                     <div class="details-content">
                         <ul class="product-features">
-                            <li>Anti Dragging Formula</li>
-                            <li>Dynamically Balanced</li>
-                            <li>Touring and Race Proven</li>
-                            <li>Performance Guaranteed</li>
+                            <li>Anti Dragging Formula</li><li>Dynamically Balanced</li><li>Touring and Race Proven</li><li>Performance Guaranteed</li>
                         </ul>
                     </div>
+                    <button class="add-to-cart-btn btn" data-id="p3" data-name="RS8 Performance Clutch Bell" data-price="1380.00" data-image="images/rs8bell.webp">Add to Cart</button>
                     <button class="details-btn">View Details</button>
                 </div>
 
@@ -91,14 +78,12 @@ include __DIR__ . '/includes/header.php';
                     <h3>RS8 Clutch Master</h3>
                     <div class="product-price">₱1,680.00</div>
                     <p class="product-desc">Super Lightweight Clutch Master Assembly</p>
-
                     <div class="details-content">
                         <ul class="product-features">
-                            <li>Anti Dragging Formula</li>
-                            <li>Touring and Race Proven</li>
-                            <li>Performance Guaranteed</li>
+                            <li>Anti Dragging Formula</li><li>Touring and Race Proven</li><li>Performance Guaranteed</li>
                         </ul>
                     </div>
+                    <button class="add-to-cart-btn btn" data-id="p4" data-name="RS8 Clutch Master" data-price="1680.00" data-image="images/rs8clutchassy.webp">Add to Cart</button>
                     <button class="details-btn">View Details</button>
                 </div>
 
@@ -108,12 +93,12 @@ include __DIR__ . '/includes/header.php';
                     <h3>RS8 Magic Degreaser</h3>
                     <div class="product-price">₱150.00</div>
                     <p class="product-desc">Shine, Protect, Clean and Degrease. Powerful Formula Cleans Quickly and Easily.</p>
-
                     <div class="details-content">
                         <ul class="product-features">
                             <li>Magic Formulation for Engine, Plastic Parts, Chain</li>
                         </ul>
                     </div>
+                    <button class="add-to-cart-btn btn" data-id="p5" data-name="RS8 Magic Degreaser" data-price="150.00" data-image="images/rs8degreaser.webp">Add to Cart</button>
                     <button class="details-btn">View Details</button>
                 </div>
 
@@ -123,20 +108,14 @@ include __DIR__ . '/includes/header.php';
                     <h3>RS8 Snapback Mesh Cap</h3>
                     <div class="product-price">₱680.00</div>
                     <p class="product-desc">V1 Gray-White (Limited Edition) Team Apparel</p>
-
                     <div class="details-content">
                         <ul class="product-features">
-                            <li>Snapback</li>
-                            <li>Flat Brim</li>
-                            <li>Embroidery</li>
-                            <li>High Quality</li>
-                            <li>Cotton/Acrylic</li>
-                            <li>Comes with String Bag</li>
+                            <li>Snapback</li><li>Flat Brim</li><li>Embroidery</li><li>High Quality</li><li>Cotton/Acrylic</li><li>Comes with String Bag</li>
                         </ul>
                     </div>
+                    <button class="add-to-cart-btn btn" data-id="p6" data-name="RS8 Snapback Mesh Cap" data-price="680.00" data-image="images/rs8cap.jpg">Add to Cart</button>
                     <button class="details-btn">View Details</button>
                 </div>
-
             </div>
         </div>
     </section>
@@ -145,31 +124,16 @@ include __DIR__ . '/includes/header.php';
         <div class="container">
             <div class="feature-grid">
                 <div class="feature">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 3.5"/></svg>
-                    </div>
-                    <div>
-                        <h3>Taiwan Precision</h3>
-                        <p>Every part is machined to tight tolerances by manufacturers who supply the Taiwanese racing scene.</p>
-                    </div>
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 3.5"/></svg></div>
+                    <div><h3>Taiwan Precision</h3><p>Every part is machined to tight tolerances by manufacturers who supply the Taiwanese racing scene.</p></div>
                 </div>
                 <div class="feature">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
-                    </div>
-                    <div>
-                        <h3>Dyno-Tested</h3>
-                        <p>Nothing ships until it's proven power gains and reliability on the bench, not just on paper.</p>
-                    </div>
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+                    <div><h3>Dyno-Tested</h3><p>Nothing ships until it's proven power gains and reliability on the bench, not just on paper.</p></div>
                 </div>
                 <div class="feature">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                    </div>
-                    <div>
-                        <h3>Rider-First Support</h3>
-                        <p>Talk to a real person about fitment, tuning, and what setup makes sense for your build.</p>
-                    </div>
+                    <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+                    <div><h3>Rider-First Support</h3><p>Talk to a real person about fitment, tuning, and what setup makes sense for your build.</p></div>
                 </div>
             </div>
         </div>
