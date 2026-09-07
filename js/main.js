@@ -36,12 +36,28 @@ addToCartButtons.forEach(button => {
     button.addEventListener('click', function(e) {
         e.preventDefault();
         
+        // Popup asking the user for the quantity (Shopee-style modal feel)
+        let userInput = prompt("How many items do you want to add?", "1");
+        
+        // If they click Cancel, stop right here
+        if (userInput === null) return;
+        
+        // Convert to a number
+        let quantity = parseInt(userInput);
+        
+        // Ensure they entered a valid number greater than 0
+        if (isNaN(quantity) || quantity <= 0) {
+            alert("Please enter a valid quantity.");
+            return;
+        }
+        
         const formData = new FormData();
         formData.append('action', 'add');
         formData.append('id', this.dataset.id);
         formData.append('name', this.dataset.name);
         formData.append('price', this.dataset.price);
         formData.append('image', this.dataset.image);
+        formData.append('quantity', quantity);
 
         fetch('cart_action.php', {
             method: 'POST',
@@ -50,11 +66,11 @@ addToCartButtons.forEach(button => {
         .then(response => response.json())
         .then(data => {
             if(data.status === 'success') {
-                alert('Item added to cart!');
+                alert(quantity + ' item(s) successfully added to cart!');
                 const counter = document.getElementById('cart-counter');
                 if(counter) counter.innerText = data.totalItems;
             } else if (data.status === 'unauthorized') {
-                alert('Please log in to add items to your cart.');
+                alert('Please log in or register to add items to your cart.');
                 window.location.href = 'login.php'; 
             }
         })

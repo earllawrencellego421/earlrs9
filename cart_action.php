@@ -17,15 +17,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit;
         }
 
-        $id    = $_POST['id'] ?? '';
-        $name  = $_POST['name'] ?? '';
-        $price = (float)($_POST['price'] ?? 0);
-        $image = $_POST['image'] ?? '';
+        $id       = $_POST['id'] ?? '';
+        $name     = $_POST['name'] ?? '';
+        $price    = (float)($_POST['price'] ?? 0);
+        $image    = $_POST['image'] ?? '';
+        
+        // Safely capture the quantity sent from the Javascript popup
+        $quantity = isset($_POST['quantity']) ? max(1, (int)$_POST['quantity']) : 1;
         
         if (isset($_SESSION['cart'][$id])) {
-            $_SESSION['cart'][$id]['quantity'] += 1;
+            $_SESSION['cart'][$id]['quantity'] += $quantity;
         } else {
-            $_SESSION['cart'][$id] = ['name' => $name, 'price' => $price, 'image' => $image, 'quantity' => 1];
+            $_SESSION['cart'][$id] = [
+                'name'     => $name, 
+                'price'    => $price, 
+                'image'    => $image, 
+                'quantity' => $quantity
+            ];
         }
         
         $totalItems = array_sum(array_column($_SESSION['cart'], 'quantity'));

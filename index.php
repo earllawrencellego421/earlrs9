@@ -38,8 +38,10 @@ include __DIR__ . '/includes/header.php';
                             <li>100% Synthetic</li><li>10W-50 API SN</li><li>4T Racing</li><li>JASO MA</li><li>Racing Line</li><li>PAO Formulated</li>
                         </ul>
                     </div>
-                    <button class="add-to-cart-btn btn" data-id="p1" data-name="RS8 Racing Line 10W-50" data-price="350.00" data-image="images/rs8oil.webp">Add to Cart</button>
-                    <button class="details-btn">View Details</button>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <button class="details-btn btn" style="flex: 1; background: #333;">View Details</button>
+                        <button class="add-to-cart-btn btn" style="flex: 1;" data-id="p1" data-name="RS8 Racing Line 10W-50" data-price="350.00" data-image="images/rs8oil.webp">Add to Cart</button>
+                    </div>
                 </div>
 
                 <!-- Product 2 -->
@@ -53,8 +55,10 @@ include __DIR__ . '/includes/header.php';
                             <li>Touring and Race Proven</li><li>Performance Guaranteed</li><li>High Speed Profile Design</li><li>Precision Machining</li><li>Easy Tuning and Installation</li>
                         </ul>
                     </div>
-                    <button class="add-to-cart-btn btn" data-id="p2" data-name="RS8 Torque Drive Half Sheeve" data-price="1680.00" data-image="images/torquedrive.webp">Add to Cart</button>
-                    <button class="details-btn">View Details</button>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <button class="details-btn btn" style="flex: 1; background: #333;">View Details</button>
+                        <button class="add-to-cart-btn btn" style="flex: 1;" data-id="p2" data-name="RS8 Torque Drive Half Sheeve" data-price="1680.00" data-image="images/torquedrive.webp">Add to Cart</button>
+                    </div>
                 </div>
 
                 <!-- Product 3 -->
@@ -68,8 +72,10 @@ include __DIR__ . '/includes/header.php';
                             <li>Anti Dragging Formula</li><li>Dynamically Balanced</li><li>Touring and Race Proven</li><li>Performance Guaranteed</li>
                         </ul>
                     </div>
-                    <button class="add-to-cart-btn btn" data-id="p3" data-name="RS8 Performance Clutch Bell" data-price="1380.00" data-image="images/rs8bell.webp">Add to Cart</button>
-                    <button class="details-btn">View Details</button>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <button class="details-btn btn" style="flex: 1; background: #333;">View Details</button>
+                        <button class="add-to-cart-btn btn" style="flex: 1;" data-id="p3" data-name="RS8 Performance Clutch Bell" data-price="1380.00" data-image="images/rs8bell.webp">Add to Cart</button>
+                    </div>
                 </div>
 
                 <!-- Product 4 -->
@@ -83,8 +89,10 @@ include __DIR__ . '/includes/header.php';
                             <li>Anti Dragging Formula</li><li>Touring and Race Proven</li><li>Performance Guaranteed</li>
                         </ul>
                     </div>
-                    <button class="add-to-cart-btn btn" data-id="p4" data-name="RS8 Clutch Master" data-price="1680.00" data-image="images/rs8clutchassy.webp">Add to Cart</button>
-                    <button class="details-btn">View Details</button>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <button class="details-btn btn" style="flex: 1; background: #333;">View Details</button>
+                        <button class="add-to-cart-btn btn" style="flex: 1;" data-id="p4" data-name="RS8 Clutch Master" data-price="1680.00" data-image="images/rs8clutchassy.webp">Add to Cart</button>
+                    </div>
                 </div>
 
                 <!-- Product 5 -->
@@ -98,8 +106,10 @@ include __DIR__ . '/includes/header.php';
                             <li>Magic Formulation for Engine, Plastic Parts, Chain</li>
                         </ul>
                     </div>
-                    <button class="add-to-cart-btn btn" data-id="p5" data-name="RS8 Magic Degreaser" data-price="150.00" data-image="images/rs8degreaser.webp">Add to Cart</button>
-                    <button class="details-btn">View Details</button>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <button class="details-btn btn" style="flex: 1; background: #333;">View Details</button>
+                        <button class="add-to-cart-btn btn" style="flex: 1;" data-id="p5" data-name="RS8 Magic Degreaser" data-price="150.00" data-image="images/rs8degreaser.webp">Add to Cart</button>
+                    </div>
                 </div>
 
                 <!-- Product 6 -->
@@ -113,8 +123,10 @@ include __DIR__ . '/includes/header.php';
                             <li>Snapback</li><li>Flat Brim</li><li>Embroidery</li><li>High Quality</li><li>Cotton/Acrylic</li><li>Comes with String Bag</li>
                         </ul>
                     </div>
-                    <button class="add-to-cart-btn btn" data-id="p6" data-name="RS8 Snapback Mesh Cap" data-price="680.00" data-image="images/rs8cap.jpg">Add to Cart</button>
-                    <button class="details-btn">View Details</button>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <button class="details-btn btn" style="flex: 1; background: #333;">View Details</button>
+                        <button class="add-to-cart-btn btn" style="flex: 1;" data-id="p6" data-name="RS8 Snapback Mesh Cap" data-price="680.00" data-image="images/rs8cap.jpg">Add to Cart</button>
+                    </div>
                 </div>
             </div>
         </div>
